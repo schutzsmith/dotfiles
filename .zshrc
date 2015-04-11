@@ -47,7 +47,7 @@ fi
 
 
 
-[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+# [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
 # User configuration
 
@@ -70,4 +70,4 @@ compinit
 
 bindkey -v
 
-source ~/.zsh_alias
+# source ~/.zsh_alias
