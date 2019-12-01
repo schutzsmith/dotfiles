@@ -1,0 +1,55 @@
+{
+	"name": "ionic3-snippets",
+	"version": "1.0.1",
+	"displayName": "Ionic 3 snippets",
+	"description": "VS code snippets for Ionic 3 components",
+	"main": "index.js",
+	"icon": "icon.png",
+	"bugs": {
+		"url": "https://github.com/siteslave/Ionic3-snippets/issues"
+	},
+	"homepage": "https://github.com/siteslave/Ionic3-snippets/blob/master/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/siteslave/Ionic3-snippets.git"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"Ionic",
+		"HTML",
+		"snippet"
+	],
+	"author": "Satit Rianpit",
+	"publisher": "siteslave",
+	"license": "MIT",
+	"engines": {
+		"vscode": "^1.0.0"
+	},
+	"categories": [
+		"Snippets",
+		"Languages",
+		"Other"
+	],
+	"activationEvents": [
+		"onLanguage:html"
+	],
+	"galleryBanner": {
+		"color": "#ffffff",
+		"theme": "light"
+	},
+	"contributes": {
+		"snippets": [
+			{
+				"language": "html",
+				"path": "./snippets/html.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "4d327701-43dc-4f81-a4ec-42766819530f",
+		"publisherId": "256b9e7b-53a6-45f0-bea2-ebfe4897a606",
+		"publisherDisplayName": "Satit Rianpit"
+	}
+}

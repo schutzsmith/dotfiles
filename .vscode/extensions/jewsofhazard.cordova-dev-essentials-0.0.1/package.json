@@ -1,0 +1,28 @@
+{
+	"name": "cordova-dev-essentials",
+	"displayName": "Cordova-Dev-Essentials",
+	"description": "This is a grouping of extensions for VSCode that are useful when developing Cordova and Ionic based apps. This is specifically geared towards Ionic 2 w/ Angular TS",
+	"version": "0.0.1",
+	"publisher": "jewsofhazard",
+	"engines": {
+		"vscode": "^1.10.0"
+	},
+	"categories": [
+		"Extension Packs"
+	],
+	"extensionDependencies": [
+		"vsmobile.cordova-tools",
+		"johnpapa.Angular2",
+		"formulahendry.auto-rename-tag",
+		"anseki.vscode-color",
+		"abusaidm.html-snippets",
+		"eg2.vscode-npm-script",
+		"christian-kohler.npm-intellisense",
+		"eg2.tslint"
+	],
+	"__metadata": {
+		"id": "817a363e-adbd-4c51-83b4-83b3957730a1",
+		"publisherId": "18d6bd4f-2290-483b-a833-a4a1acb66cca",
+		"publisherDisplayName": "JewsOfHazard"
+	}
+}

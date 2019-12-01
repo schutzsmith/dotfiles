@@ -1,0 +1,32 @@
+{
+	"name": "theme-seti",
+	"description": "Modified Seti theme for VS Code",
+	"version": "0.0.2",
+	"engines": {
+		"vscode": ">=0.10.1"
+	},
+	"publisher": "tnaseem",
+	"contributes": {
+		"themes": [
+			{
+				"label": "Seti Modified",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Seti.tmTheme"
+			}
+		]
+	},
+	"displayName": "Modified Seti Theme",
+	"icon": "images/icon.png",
+	"galleryBanner": {
+		"color": "#000000",
+		"theme": "dark"
+	},
+	"categories": [
+		"Themes"
+	],
+	"__metadata": {
+		"id": "f7f33070-0f4f-4f19-85ec-d1d02d258357",
+		"publisherId": "81d11b8a-9fa1-4a0a-963b-c10851b26182",
+		"publisherDisplayName": "Tarique Naseem"
+	}
+}

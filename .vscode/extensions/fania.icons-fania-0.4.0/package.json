@@ -1,0 +1,31 @@
+{
+	"name": "icons-fania",
+	"displayName": "Fania Icons",
+	"version": "0.4.0",
+	"description": "Seti based icon theme with pink LaTeX icon.",
+	"publisher": "fania",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Fania/vscode-icons.git"
+	},
+	"scripts": {
+		"update": "node ./build/update-icon-theme.js"
+	},
+	"engines": {
+		"vscode": "*"
+	},
+	"contributes": {
+		"iconThemes": [
+			{
+				"id": "vs-seti",
+				"label": "Seti (Fania)",
+				"path": "./icons/vs-seti-icon-theme.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "4d68b267-3c69-45ed-abc8-786e91a959e9",
+		"publisherId": "25e8efbd-48ae-4412-918d-4fc9c4812cc0",
+		"publisherDisplayName": "Fania Ra"
+	}
+}

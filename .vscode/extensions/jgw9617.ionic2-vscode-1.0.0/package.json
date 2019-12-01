@@ -1,0 +1,68 @@
+{
+	"name": "ionic2-vscode",
+	"displayName": "ionic2-vscode",
+	"description": "Ionic2 vscode extension! Run ionic-cli commands straight from vscode! This is meant to be used with Ionic 2, to get the correct ionic-cli for Ionic 2 apps please install ionic@beta with npm install ionic@beta.",
+	"version": "1.0.0",
+	"publisher": "jgw9617",
+	"engines": {
+		"vscode": "^0.10.6"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:extension.ionicServe",
+		"onCommand:extension.ionicRunAndroid",
+		"onCommand:extension.ionicEmulateAndroid",
+		"onCommand:extension.ionicRunIos",
+		"onCommand:extension.ionicEmulateIos",
+		"onCommand:extension.ionicGenerate"
+	],
+	"main": "./out/src/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.ionicServe",
+				"title": "Ionic Serve"
+			},
+			{
+				"command": "extension.ionicRunAndroid",
+				"title": "Ionic Run Android"
+			},
+			{
+				"command": "extension.ionicEmulateAndroid",
+				"title": "Ionic Emulate Android"
+			},
+			{
+				"command": "extension.ionicRunIos",
+				"title": "Ionic Run Ios"
+			},
+			{
+				"command": "extension.ionicEmulateIos",
+				"title": "Ionic Emulate Ios"
+			},
+			{
+				"command": "extension.ionicGenerate",
+				"title": "Ionic Generate"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+		"compile": "node ./node_modules/vscode/bin/compile -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install"
+	},
+	"devDependencies": {
+		"typescript": "^1.8.10",
+		"vscode": "^0.11.12",
+		"grunt": "^1.0.1",
+		"grunt-shell": "^1.3.0",
+		"load-grunt-tasks": "^3.5.0",
+		"request": "^2.72.0"
+	},
+	"__metadata": {
+		"id": "4b9a7008-5c0e-401c-84a8-af85a82a806f",
+		"publisherId": "f6ed3831-84d5-40be-878f-fe02eb8a3f81",
+		"publisherDisplayName": "Justin Willis"
+	}
+}

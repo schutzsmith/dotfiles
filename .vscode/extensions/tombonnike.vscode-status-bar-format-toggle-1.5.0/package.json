@@ -1,0 +1,104 @@
+{
+	"name": "vscode-status-bar-format-toggle",
+	"displayName": "Formatting Toggle",
+	"version": "1.5.0",
+	"description": "A VS Code extension that allows you to toggle the formatter (Prettier, Beautify, …) ON and OFF with a simple click.",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Tom-Bonnike/vscode-formatting-toggle.git"
+	},
+	"publisher": "tombonnike",
+	"author": "Tom Bonnike (bonniketom@gmail.com)",
+	"icon": "icon.png",
+	"bugs": {
+		"url": "https://github.com/Tom-Bonnike/vscode-formatting-toggle/issues"
+	},
+	"homepage": "https://marketplace.visualstudio.com/items?itemName=tombonnike.vscode-status-bar-format-toggle",
+	"engines": {
+		"vscode": "^1.19.0"
+	},
+	"keywords": [
+		"disable",
+		"toggle",
+		"format",
+		"formatting",
+		"prettier"
+	],
+	"categories": [
+		"Other",
+		"Formatters"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./out/src/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.toggleFormat",
+				"title": "Toggle formatting"
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "Formatting Toggle’s configuration",
+			"properties": {
+				"formattingToggle.activateFor": {
+					"type": "array",
+					"default": [
+						"formatOnPaste",
+						"formatOnSave"
+					],
+					"description": "The events for which the formatter should be toggled back ON. Ignores `formatOnType` by default."
+				}
+			}
+		}
+	},
+	"jest": {
+		"moduleFileExtensions": [
+			"ts",
+			"js"
+		],
+		"transform": {
+			"^.+\\.ts$": "ts-jest"
+		},
+		"modulePathIgnorePatterns": [
+			"out"
+		],
+		"moduleNameMapper": {
+			"vscode": "<rootDir>/src/__mocks__/vscode.ts"
+		},
+		"testRegex": "spec.ts"
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"start": "tsc -watch -p ./",
+		"test": "jest --verbose",
+		"vscode:prepublish": "tsc -p ./"
+	},
+	"devDependencies": {
+		"@types/jest": "^24.0.6",
+		"@types/lodash": "^4.14.92",
+		"@types/node": "^11.9.4",
+		"clean-slate-lint": "^1.0.9",
+		"jest": "^24.1.0",
+		"ts-jest": "^24.0.0",
+		"typescript": "^3.3.3",
+		"vscode": "^1.1.30"
+	},
+	"dependencies": {
+		"lodash": "^4.17.11"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "./node_modules/.bin/clean-slate-lint",
+			"pre-rewrite": "./node_modules/.bin/clean-slate-lint"
+		}
+	},
+	"__metadata": {
+		"id": "28fcf0b8-26a5-4e99-9b8d-02e990366c6f",
+		"publisherId": "89227cef-64e4-437d-bf66-0e4b431a4995",
+		"publisherDisplayName": "tombonnike"
+	}
+}

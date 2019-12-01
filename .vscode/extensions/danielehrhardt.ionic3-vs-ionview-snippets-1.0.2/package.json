@@ -1,0 +1,54 @@
+{
+	"name": "ionic3-vs-ionView-snippets",
+	"version": "1.0.2",
+	"displayName": "Ionic 3 ionView Snippets",
+	"description": "VS code snippets for Ionic 3 ionView",
+	"main": "index.js",
+	"icon": "ionic3-vs-ionView-snippets.png",
+	"bugs": {
+		"url": "https://github.com/danielehrhardt/ionic3-vs-ionView-snippets/issues"
+	},
+	"homepage": "https://github.com/danielehrhardt/ionic3-vs-ionView-snippets/blob/master/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/danielehrhardt/ionic3-vs-ionView-snippets.git"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"Ionic",
+		"ionView",
+		"snippet"
+	],
+	"author": "danielehrhardt",
+	"publisher": "danielehrhardt",
+	"license": "MIT",
+	"engines": {
+		"vscode": "^1.0.0"
+	},
+	"categories": [
+		"Snippets",
+		"Other"
+	],
+	"activationEvents": [
+		"onLanguage:typescript"
+	],
+	"galleryBanner": {
+		"color": "#ffffff",
+		"theme": "light"
+	},
+	"contributes": {
+		"snippets": [
+			{
+				"language": "typescript",
+				"path": "./snippets/snippets.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "62ca447b-37fd-4d14-a0f2-0c0361ce592f",
+		"publisherId": "66c8c17d-3975-47de-8cdf-a27b12941c8b",
+		"publisherDisplayName": "Daniel Ehrhardt"
+	}
+}

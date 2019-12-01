@@ -1,0 +1,18 @@
+{
+  "name": "ng-template-server",
+  "description": "Angular Language Service server",
+  "private": true,
+  "author": "Angular",
+  "license": "MIT",
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {
+    "vscode-languageserver": "~5.2.1",
+    "@angular/compiler": "^8.2.3",
+    "@angular/compiler-cli": "^8.2.3",
+    "@angular/core": "^8.2.3",
+    "@angular/language-service": "^8.2.3",
+    "rxjs": "^6.4.0"
+  }
+}

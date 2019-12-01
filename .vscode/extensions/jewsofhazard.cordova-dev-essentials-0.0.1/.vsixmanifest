@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Language="en-US" Id="cordova-dev-essentials" Version="0.0.1" Publisher="jewsofhazard"/>
+    <DisplayName>Cordova-Dev-Essentials</DisplayName>
+    <Description xml:space="preserve">This is a grouping of extensions for VSCode that are useful when developing Cordova and Ionic based apps. This is specifically geared towards Ionic 2 w/ Angular TS</Description>
+    <Tags>javascript</Tags>
+    <Categories>Extension Packs</Categories>
+    <GalleryFlags>Public</GalleryFlags>
+    <Badges></Badges>
+    <Properties>
+      <Property Id="Microsoft.VisualStudio.Code.Engine" Value="^1.10.0" />
+      <Property Id="Microsoft.VisualStudio.Code.ExtensionDependencies" Value="vsmobile.cordova-tools,johnpapa.Angular2,formulahendry.auto-rename-tag,anseki.vscode-color,abusaidm.html-snippets,eg2.vscode-npm-script,christian-kohler.npm-intellisense,eg2.tslint" />
+      
+      
+      
+      
+      
+      <Property Id="Microsoft.VisualStudio.Services.GitHubFlavoredMarkdown" Value="true" />
+    </Properties>
+    
+    
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Code"/>
+  </Installation>
+  <Dependencies/>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.Code.Manifest" Path="extension/package.json" Addressable="true" />
+    <Asset Type="Microsoft.VisualStudio.Services.Content.Details" Path="extension/README.md" Addressable="true" /><Asset Type="Microsoft.VisualStudio.Services.Content.Changelog" Path="extension/CHANGELOG.md" Addressable="true" />
+  </Assets>
+</PackageManifest>

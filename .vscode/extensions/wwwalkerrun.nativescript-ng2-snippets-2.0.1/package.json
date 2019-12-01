@@ -1,0 +1,55 @@
+{
+	"name": "nativescript-ng2-snippets",
+	"displayName": "NativeScript + Angular Snippets",
+	"description": "Snippets for NativeScript + Angular Development.",
+	"version": "2.0.1",
+	"publisher": "wwwalkerrun",
+	"icon": "images/logo.png",
+	"galleryBanner": {
+		"color": "#0c121c",
+		"theme": "dark"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/NathanWalker/nativescript-ng2-vscode-snippets/issues",
+		"email": "walkerrunpdx@gmail.com"
+	},
+	"homepage": "https://github.com/NathanWalker/nativescript-ng2-vscode-snippets/blob/master/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/NathanWalker/nativescript-ng2-vscode-snippets.git"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"keywords": [
+		"nativescript",
+		"telerik",
+		"ng2",
+		"angular",
+		"snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "html",
+				"path": "./snippets/html.json"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/typescript.json"
+			}
+		]
+	},
+	"extensionDependencies": [
+		"johnpapa.Angular2"
+	],
+	"engines": {
+		"vscode": "0.10.x"
+	},
+	"__metadata": {
+		"id": "81fdbd0b-bd23-4c97-bbc6-8b6b55e0c969",
+		"publisherId": "e9f15e06-f900-4baa-a0bd-8ba731830f7e",
+		"publisherDisplayName": "Nathan Walker"
+	}
+}

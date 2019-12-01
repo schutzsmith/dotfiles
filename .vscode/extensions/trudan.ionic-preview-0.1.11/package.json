@@ -1,0 +1,106 @@
+{
+	"name": "ionic-preview",
+	"displayName": "Ionic Preview",
+	"description": "Preview a live version of your Ionic application in an VS Code pane.",
+	"version": "0.1.11",
+	"publisher": "trudan",
+	"authors": [
+		"TruDan",
+		"Jadson Bonfim Ribeiro"
+	],
+	"readme": "README.md",
+	"icon": "images/ionic.png",
+	"engines": {
+		"vscode": "^1.14.0"
+	},
+	"galleryBanner": {
+		"color": "#3B3738",
+		"theme": "dark"
+	},
+	"bugs": "https://github.com/trudan/ionic-preview/issues",
+	"homepage": "https://github.com/trudan/ionic-preview/blob/master/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/trudan/ionic-preview"
+	},
+	"keywords": [
+		"ionic",
+		"ionic 2",
+		"ionic 3",
+		"ionic framework",
+		"mobile"
+	],
+	"categories": [
+		"Extension Packs",
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./out/src/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.ionic-preview-android",
+				"title": "Android",
+				"category": "Ionic Preview"
+			},
+			{
+				"command": "extension.ionic-preview-ios",
+				"title": "IOS",
+				"category": "Ionic Preview"
+			},
+			{
+				"command": "extension.ionic-preview-windows",
+				"title": "Windows Phone",
+				"category": "Ionic Preview"
+			},
+			{
+				"command": "extension.ionic-preview-undefined",
+				"title": "Without frame",
+				"category": "Ionic Preview"
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "Ionic Preview",
+			"properties": {
+				"ionic-preview.host": {
+					"type": "string",
+					"default": "127.0.0.1",
+					"description": "The host on which the ionic serves is running."
+				},
+				"ionic-preview.port": {
+					"type": "number",
+					"default": 8100,
+					"description": "The port on which the ionic serves is running."
+				}
+			}
+		}
+	},
+	"scripts": {
+		"build": "npm run build:scss & npm run build:ts",
+		"build:scss": "node-sass -r --output-style=compressed src/scss/ -o out/src/",
+		"build:ts": "tsc -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test",
+		"vscode:prepublish": "npm run build",
+		"watch": "concurrently --kill-others \"npm run watch:scss\" \"npm run watch:ts\"",
+		"watch:scss": "node-sass -w -r --output-style=nested --source-map src/scss -o out/src",
+		"watch:ts": "tsc -watch -p ./"
+	},
+	"devDependencies": {
+		"@types/mocha": "^2.2.32",
+		"@types/node": "^6.0.40",
+		"concurrently": "^3.5.1",
+		"mocha": "^2.3.3",
+		"node-sass": "^4.7.2",
+		"typescript": "^2.0.3",
+		"vscode": "^1.0.0"
+	},
+	"__metadata": {
+		"id": "b73c7bfd-c271-4631-9cf8-9310947ae6e4",
+		"publisherId": "69b05720-a12d-4c6f-864c-c364daa1deb9",
+		"publisherDisplayName": "TruDan"
+	}
+}

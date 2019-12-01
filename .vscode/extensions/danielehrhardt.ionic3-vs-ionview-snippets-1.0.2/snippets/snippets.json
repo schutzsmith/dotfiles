@@ -1,0 +1,67 @@
+{
+
+  "ionViewDidLoad": {
+    "prefix": "ionViewDidLoad",
+    "body": [
+      "ionViewDidLoad(){",
+      " ",
+      "}"
+    ]
+  },
+  "ionViewWillEnter": {
+    "prefix": "ionViewWillEnter",
+    "body": [
+      "ionViewWillEnter(){",
+      " ",
+      "}"
+    ]
+  },
+  "ionViewDidEnter": {
+    "prefix": "ionViewDidEnter",
+    "body": [
+      "ionViewDidEnter(){",
+      " ",
+      "}"
+    ]
+  },
+  "ionViewWillLeave": {
+    "prefix": "ionViewWillLeave",
+    "body": [
+      "ionViewWillLeave(){",
+      " ",
+      "}"
+    ]
+  },
+  "ionViewDidLeave": {
+    "prefix": "ionViewDidLeave",
+    "body": [
+      "ionViewDidLeave(){",
+      " ",
+      "}"
+    ]
+  },
+  "ionViewWillUnload": {
+    "prefix": "ionViewWillUnload",
+    "body": [
+      "ionViewWillUnload(){",
+      " ",
+      "}"
+    ]
+  },
+  "ionViewCanEnter": {
+    "prefix": "ionViewCanEnter",
+    "body": [
+      "ionViewCanEnter(){",
+      " ",
+      "}"
+    ]
+  },
+  "ionViewCanLeave": {
+    "prefix": "ionViewCanLeave",
+    "body": [
+      "ionViewCanLeave(){",
+      " ",
+      "}"
+    ]
+  }
+}
